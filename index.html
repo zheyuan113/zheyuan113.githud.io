@@ -58,6 +58,15 @@
     button:active {
       transform: scale(0.95);
     }
+
+    /* 新增左下角文字样式 */
+    .footer-text {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      font-size: 0.7em; /* 最小号字体 */
+      color: #666;
+    }
   </style>
 </head>
 <body>
@@ -69,6 +78,8 @@
       <button id="no">❌ 不愿意</button>
     </div>
   </div>
+  <!-- 新增左下角文字元素 -->
+  <div class="footer-text">折鸢</div>
 
   <script>
     const yesBtn = document.getElementById("yes");
@@ -107,6 +118,8 @@
           <h1>❤️ 我也喜欢你！❤️</h1>
           <img src="https://s21.ax1x.com/2025/09/25/pV56z6S.png" style="width:200px;animation:jump 0.6s infinite"/>
           <p>我们将在一起啦～</p>
+          <!-- 结束页也保留左下角文字 -->
+          <div class="footer-text">折鸢</div>
         </div>
         <style>
           .love-end {
@@ -116,6 +129,13 @@
           @keyframes jump {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-20px); }
+          }
+          .footer-text {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            font-size: 0.7em;
+            color: #666;
           }
         </style>
       `;
